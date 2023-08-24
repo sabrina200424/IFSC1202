@@ -1,12 +1,12 @@
-x = int(input("Enter length of time in years: "))
+x = int(input("Enter length of time in days: "))
 y = 365
-z = 52
+z = 7
 Year = int(x / y) 
 Years = "Years: "
-Month = int(x % z)
-Months = "Months: "
+Week = int(x / z)
+Weeks = "Weeks: "
 Day = int(x % y)
 Days = "Days: "
 print(Years + str(Year))
-print(Months + str(Month))
+print(Weeks + str(Week))
 print(Days + str(Day))
