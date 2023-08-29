@@ -1,12 +1,12 @@
-x = int(input("Enter length of time in days: "))
-y = 365
-z = 7
-Year = int(x / y) 
+amount = int(input("Enter length of time in days: "))
+x = amount // 365
 Years = "Years: "
-Week = int(x / z)
+print(Years , x)
+amount = amount - (x * 365)
+x = amount // 7
 Weeks = "Weeks: "
-Day = int(x % y)
+print(Weeks, x)
+y = x * 7
+z = amount - y
 Days = "Days: "
-print(Years + str(Year))
-print(Weeks + str(Week))
-print(Days + str(Day))
+print("Days:", z)
