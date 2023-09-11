@@ -11,9 +11,12 @@ elif b == "-":
 elif b == "*":
     result = a * c
     print (a,b,c,"=",result)
-elif b =="/": 
+elif b =="/":
     result = a / c
     print (a,b,c,"=",result)
-else: 
+else:
     print("Invalid Operator")
 
+    #print has to be at the very end of the if statement for the code to not have errors
+    #put quotations for the functions
+    #elif statement moves down if the first "if" statement is not right
