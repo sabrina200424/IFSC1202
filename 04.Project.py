@@ -1,6 +1,10 @@
-n = int(input("Enter Start of Range: "))
+c = int(input("Enter Start of Range: "))
 b = int(input("Enter End of Range: "))
-for i in range(n // 2 + 1, b + 1):
-    print("Prime Numbers Between: ", i)
-   
-
+print('Prime Numbers: ')
+for number in range (c, b + 1):
+    if number > 1:
+        for i in range(2, number // 2 + 1):
+            if (number % i) == 0:
+                break 
+        else:
+            print(number)
