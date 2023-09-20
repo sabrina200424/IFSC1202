@@ -1,7 +1,7 @@
 a = int(input("Enter Start of Range: "))
 b = int(input("Enter End of Range: "))
 print("Special Numbers between", a, "and", b)
-for n in range (a, b+1):
+for n in range (a, b + 1):
     length = 0
     num = n
     
@@ -17,3 +17,5 @@ for n in range (a, b+1):
         num = num // 10
     if sum == n:
         print (sum)
+
+#add in double equal sign when using a if statement
