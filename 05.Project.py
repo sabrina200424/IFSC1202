@@ -19,3 +19,5 @@ for n in range (a, b + 1):
         print (sum)
 
 #add in double equal sign when using a if statement
+#make sure to add in colons after while and if loops
+#if using for statements ident while and if loops for code to run
