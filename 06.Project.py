@@ -22,6 +22,7 @@ while line != "":
             mergerecord += 1
         projectoutputfile.write("\n")
         projectmergefile.close()
+        # Make sure to close the files
     else:
         projectoutputfile.write(line)
         outputrecord += 1
