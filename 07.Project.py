@@ -26,7 +26,7 @@ while Line != "":
     outputrecord += 1
     degrees, minutes, seconds = ParseDDMMSS(Line)
     decimaldegrees = DDMMSStoDecimal(degrees, minutes, seconds)
-    #print(decimaldegrees)  # Just add in 6 records processed instead of the numbers too
+    #print(decimaldegrees)  # Just add in 6 records processed instead of the numbers because that's the expected output
     projectoutputfile.write(str(decimaldegrees) + "\n")
     Line = projectinput.readline()
 
