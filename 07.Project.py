@@ -6,7 +6,7 @@ def ParseDDMMSS (Line):
     singlequoteposition = Line.find("'")
     doublequoteposition = Line.find('"')
     degrees = Line[:degreeposition]
-    minutes = Line[degreeposition + 1: singlequoteposition]
+    minutes = Line[degreeposition + 1: singlequoteposition]  #put plus 1 because you want to start after the degree position
     seconds = Line[singlequoteposition + 1: doublequoteposition]
 
     degrees = float(degrees)
@@ -26,11 +26,15 @@ while Line != "":
     outputrecord += 1
     degrees, minutes, seconds = ParseDDMMSS(Line)
     decimaldegrees = DDMMSStoDecimal(degrees, minutes, seconds)
-    print(decimaldegrees)
+    #print(decimaldegrees)  # Just add in 6 records processed instead of the numbers too
     projectoutputfile.write(str(decimaldegrees) + "\n")
     Line = projectinput.readline()
 
-#projectoutputfile.write(Line)
+#projectoutputfile.write(Line)   #if you put in "Line" then it's not going to work because it places
+#values of the degrees
+
+#projectoutputfile write line needs to be after you defined a variable because if you do it before it's
+# going to put an error sign
 projectoutputfile.close()
 
 print(outputrecord, "records processed")
