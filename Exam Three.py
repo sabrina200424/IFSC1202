@@ -30,6 +30,7 @@ class Triangle:
     def angles(self):
         #arcoss has no attribute use acos
         # ** = exponent value
+        # 180/pi gives wrong formula
         angle1 = math.degrees(math.acos((self.s2**2 + self.s3**2 - self.s1**2) / (2 * self.s2 * self.s3)))
         angle2 = math.degrees(math.acos((self.s1**2 + self.s3**2 - self.s2**2) / (2 * self.s1 * self.s3)))
         angle3 = math.degrees(math.acos((self.s1**2 + self.s2**2 - self.s3**2) / (2 * self.s1 * self.s2)))
